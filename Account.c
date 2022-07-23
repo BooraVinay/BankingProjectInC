@@ -35,15 +35,15 @@ void accountOpening(){
         //Assigning auto generated number as account number
         acc.accountNumber = rand() % 9999;
 
-        printf("Enter your firstName:\n");
+        printf("Enter your firstName: \n");
         gets(acc.firstName);
-        printf("Enter your lastname:\n");
+        printf("Enter your lastname: \n");
         gets(acc.lastName);
-        printf("Enter your address:\n");
+        printf("Enter your address: \n");
         gets(acc.address);
-        printf("Enter your Balance:\n");
+        printf("Enter your Balance: \n");
         scanf("%f", &acc.balance);
-        printf("Enter your Account Type:\n");
+        printf("Enter your Account Type: \n");
         gets(acc.accountType);
 
         fprintf(fp,"%s", acc.accountNumber);
@@ -53,7 +53,7 @@ void accountOpening(){
         fprintf(fp,"%s", acc.balance);
         fprintf(fp,"%s", acc.accountType);    
 
-        printf("Your Account details\n");
+        printf("Your Account details \n");
         fscanf(fp, "%d", &acc.accountNumber);
         printf("Account Number : %d", acc.accountNumber);
         // printf("First Name : %d", acc.firstName);
