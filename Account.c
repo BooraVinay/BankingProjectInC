@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <time.h>
 
 typedef struct accountDetails {
 
@@ -13,7 +13,7 @@ typedef struct accountDetails {
 
 } account;
 
-void accountOpening(){
+void accountOpening() {
 
     int userCase;
     //Pseudo random number generator
