@@ -10,9 +10,10 @@ int main(){
 
     switch(userCase){
     case 1:
-     accountOpening();
+        accountOpening();
      break;
      case 2:
+        accountOpening();
      break;
      case 3:
      break;
