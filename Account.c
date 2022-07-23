@@ -31,20 +31,20 @@ void accountOpening() {
     {
 
         FILE *fp=fopen("AccountDetails.txt","a+");
-
+        fflush(stdin);
         //Assigning auto generated number as account number
         acc.accountNumber = rand() % 9999;
 
         printf("Enter your firstName: \n");
-        scanf("%s",&acc.firstName);
+        gets(acc.firstName);
         printf("Enter your lastname: \n");
-        scanf("%s",&acc.lastName);
+        gets(acc.lastName);
         printf("Enter your address: \n");
-        scanf("%s",&acc.address);
+        gets(acc.address);
         printf("Enter your Balance: \n");
         scanf("%f", &acc.balance);
         printf("Enter your Account Type: \n");
-        scanf("%s",acc.accountType);
+        gets(acc.accountType);
 
         fprintf(fp,"%s", acc.accountNumber);
         fprintf(fp,"%s", acc.firstName);
